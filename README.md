@@ -1,19 +1,21 @@
 # Automate SIHA Databases Installation
 
-This project provides automation scripts and configurations to simplify database installation and setup.
+This project provides automation scripts and simplify install oracle SIHA by install GI Infrastructure ,database installation and database creation on oracle database 19c version.
 
 ## 📂 Project Structure
-- **installer/config** → Configuration files for database setup
+- **installer/config/install.env** → Configuration files for GI and  database setup
 - **installer/scripts** → Shell scripts to automate installation steps
-- **installer/software** → Required software packages
-- - **installer/software/DB** → Required based software (LINUX.X64_193000_db_home.zip)and  PSU patches 
+- **installer/software/autoupgrade** 
+- **installer/software/GI** 
+- **installer/software/DB**
+   
 
 ## 🚀 How It Works
-1. Place your database installation files in `installer/software`.
-2. Adjust configuration files in `installer/config` as needed.
-3. Run scripts from `installer/scripts` to automate the installation process.
-4. Download GI software (LINUX.X64_193000_grid_home.zip)and  PSU patches and put in  /installer/software/GI
-5. Download DB software (LINUX.X64_193000_db_home.zip)and  PSU patches and put in  /installer/software/DB
+1. Place your GI and database software  files in `installer/software`.
+2. Download GI software (LINUX.X64_193000_grid_home.zip)and  PSU patches and put in  /installer/software/GI
+3. Download DB software (LINUX.X64_193000_db_home.zip)and  PSU patches and put in  /installer/software/DB
+4. Adjust install.env configuration files in `installer/config` as needed.
+5. Run scripts from `installer/ istaller.sh` with available option  to automate the installation process.
 
 ## 🛠 Requirements
 - OS oracle linux 8 or redhet 8 
@@ -27,7 +29,7 @@ This project provides automation scripts and configurations to simplify database
 
 ## 📖 Usage
 ```bash
-cd installer
+cd /installer
 bash installer.sh with option below : 
 
 1. create folder /installer
@@ -52,3 +54,5 @@ bash installer.sh with option below :
 --version:
         show current version and last modified of script
 
+Or you want automation all using following shell script for automation everything 
+sh complete_install.sh 
