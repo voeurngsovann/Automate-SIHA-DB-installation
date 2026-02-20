@@ -15,7 +15,7 @@ This project provides automation scripts and simplify install oracle SIHA by ins
 2. Download GI software (LINUX.X64_193000_grid_home.zip)and  PSU patches and put in  /installer/software/GI
 3. Download DB software (LINUX.X64_193000_db_home.zip)and  PSU patches and put in  /installer/software/DB
 4. Adjust install.env configuration files in `installer/config` as needed.
-5. Run scripts from `installer/ istaller.sh` with available option  to automate the installation process.
+5. Run scripts from `installer/installer.sh` with available option  to automate the installation process.
 
 ## 🛠 Requirements
 - OS oracle linux 8 or redhet 8 
@@ -23,9 +23,11 @@ This project provides automation scripts and simplify install oracle SIHA by ins
  autoupgrade.jar 
  LINUX.X64_193000_grid_home.zip
  LINUX.X64_193000_db_home.zip
- p38629535_190000_Linux-x86-64.zip
+ p38629535_190000_Linux-x86-64.zip  
  p6880880_190000_Linux-x86-64.zip
-   
+## Noted for database software
+you can using autoupgrade tool to download or using manual download  RU,OJVM,OPATCH,DPBP,MRP patch update  in put in  /installer/software/DB
+
 
 ## 📖 Usage
 ```bash
@@ -56,3 +58,4 @@ bash installer.sh with option below :
 
 Or you want automation all using following shell script for automation everything 
 sh complete_install.sh 
+
