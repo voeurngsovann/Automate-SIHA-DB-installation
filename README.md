@@ -1,4 +1,4 @@
-# Automate Databases Install
+# Automate SIHA Databases Installation
 
 This project provides automation scripts and configurations to simplify database installation and setup.
 
@@ -6,18 +6,24 @@ This project provides automation scripts and configurations to simplify database
 - **installer/config** → Configuration files for database setup
 - **installer/scripts** → Shell scripts to automate installation steps
 - **installer/software** → Required software packages
+- - **installer/software/DB** → Required based software (LINUX.X64_193000_db_home.zip)and  PSU patches 
 
 ## 🚀 How It Works
 1. Place your database installation files in `installer/software`.
 2. Adjust configuration files in `installer/config` as needed.
 3. Run scripts from `installer/scripts` to automate the installation process.
+4. Download GI software (LINUX.X64_193000_grid_home.zip)and  PSU patches and put in  /installer/software/GI
+5. Download DB software (LINUX.X64_193000_db_home.zip)and  PSU patches and put in  /installer/software/DB
 
 ## 🛠 Requirements
 - OS oracle linux 8 or redhet 8 
-- software 
+- softwares 
  autoupgrade.jar 
- p38743961_230000_Linux-x86-64.zip 
- p6880880_230000_Linux-x86-64.zip
+ LINUX.X64_193000_grid_home.zip
+ LINUX.X64_193000_db_home.zip
+ p38629535_190000_Linux-x86-64.zip
+ p6880880_190000_Linux-x86-64.zip
+   
 
 ## 📖 Usage
 ```bash
@@ -45,3 +51,4 @@ bash installer.sh with option below :
 
 --version:
         show current version and last modified of script
+
