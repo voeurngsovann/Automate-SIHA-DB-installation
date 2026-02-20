@@ -16,8 +16,8 @@ mkdir -p $SOFTWARE_DIR
 chown -R grid:oinstall $SOFTWARE_DIR
 chown -R grid:oinstall $UDMP
 chmod -R 775 $UDMP
-chown grid:asmadmin /dev/sdb1
-chmod 660  /dev/sdb1
+chown grid:asmadmin ${rwdisk1}
+chmod 660  ${rwdisk1}
  
 echo -e "${BLUE}****************************************************************************"
 
