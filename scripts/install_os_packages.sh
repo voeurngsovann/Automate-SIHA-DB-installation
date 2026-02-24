@@ -69,3 +69,16 @@ oracle   hard   memlock    134217728
 oracle   soft   memlock    134217728
 EOF
 
+# Groups created
+groupadd -g 54321 oinstall
+groupadd -g 54322 dba
+groupadd -g 54323 oper
+groupadd -g 54324 asmadmin
+groupadd -g 54325 asmdba
+groupadd -g 54326 asmoper
+
+# Grid user — owns Grid Infrastructure
+useradd -u 54320 -g oinstall -G asmadmin,asmdba,asmoper,dba grid
+
+# Oracle user — owns the Database Home
+useradd -u 54321 -g oinstall -G dba,oper,asmdba oracle
