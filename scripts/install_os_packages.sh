@@ -19,6 +19,9 @@ dnf install -y libgcc
 dnf install -y libstdc++
 dnf install -y libstdc++-devel
 dnf install -y libnsl
+dnf install -y libaio
+dnf install -y libaio-devel
+dnf install -y compat-openssl11
 dnf install -y sysstat
 dnf install -y motif
 dnf install -y motif-devel
