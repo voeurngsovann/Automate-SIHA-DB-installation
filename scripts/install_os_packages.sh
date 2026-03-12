@@ -32,6 +32,7 @@ dnf install -y make
 dnf install -y libnsl
 dnf install -y libnsl.i686
 dnf install -y libnsl2
+dnf install -y libnsl2-devel
 dnf install -y libnsl2.i686
 dnf install -y libgcc.i686
 dnf install -y libstdc++.i686
